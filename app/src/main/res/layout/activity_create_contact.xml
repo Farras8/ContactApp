@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutColour"
+    tools:context=".CreateContactActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/navbar"
+        android:padding="7dp">
+        <ImageButton
+            android:id="@+id/BackButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/navbar"
+            android:clickable="true"
+            android:onClick="backToMainActivity"
+            app:srcCompat="@drawable/baseline_arrow_back_24"
+            app:tint="@color/white" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Create Contact"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:fontFamily="@font/alata"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="140dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/baseline_person_24"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/navbar"/>
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/inpuTextBg"
+        android:drawableStart="@drawable/baseline_drive_file_rename_outline_24"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/alata"
+        android:hint="First Name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/placeholder"
+        android:textColorHint="@color/placeholder" />
+    <EditText
+        android:id="@+id/inputLastName"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="314dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/inpuTextBg"
+        android:drawableStart="@drawable/baseline_drive_file_rename_outline_24"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/alata"
+        android:hint="Last Name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/placeholder"
+        android:textColorHint="@color/placeholder" />
+
+    <EditText
+        android:id="@+id/inputPhoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/inpuTextBg"
+        android:drawableStart="@drawable/baseline_local_phone_24"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/alata"
+        android:hint="Phone"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/placeholder"
+        android:textColorHint="@color/placeholder" />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="454dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/inpuTextBg"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/alata"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/placeholder"
+        android:textColorHint="@color/placeholder" />
+
+    <EditText
+        android:id="@+id/inputAddress"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="524dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/inpuTextBg"
+        android:drawableStart="@drawable/baseline_home_24"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/alata"
+        android:hint="Address"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/placeholder"
+        android:textColorHint="@color/placeholder" />
+
+    <Spinner
+        android:id="@+id/inputGN"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="594dp"
+        android:layout_marginRight="28dp"
+        android:autofillHints="Group Name"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/black"
+        android:dropDownWidth="wrap_content"
+        android:dropDownSelector="@color/black"
+        android:fontFamily="@font/alata"
+        android:foregroundTint="#D9D9D9"
+        android:hint="Group Name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:spinnerMode="dropdown" />
+
+
+    <Button
+        android:id="@+id/saveContact"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-7dp"
+        android:backgroundTint="#a88671"
+        android:text="Save" />
+
+
+</RelativeLayout>

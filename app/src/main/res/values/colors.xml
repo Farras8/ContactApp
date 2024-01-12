@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="addContactButton">#42f551</color>
+    <color name="layoutColour">#514141</color>
+    <color name="placeholder">#887C7C</color>
+    <color name="inpuTextBg">#D9D9D9</color>
+    <color name="LabelText">#2D2929</color>
+    <color name="navbar">#2e1d12</color>
+    <color name="messsageIcon">#0d90d6</color>
+</resources>

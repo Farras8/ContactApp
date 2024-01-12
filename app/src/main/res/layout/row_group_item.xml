@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/layoutColour"
+    android:backgroundTint="@color/layoutColour">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+
+        android:background="@drawable/rounded_corner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/group_image"
+            android:layout_width="40dp"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/baseline_group_24"
+            app:civ_border_color="@color/navbar"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:text=" Group Name"
+            android:textColor="@color/LabelText"
+            android:textSize="20sp"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="60dp"/>
+
+        <ImageView
+            android:id="@+id/group_edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="9dp"
+            android:background="@drawable/circle_icon_blue"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_edit_24"
+            android:tint="@color/white"
+            app:civ_border_color="@color/navbar"
+            app:civ_border_width="1dp" />
+
+        <ImageView
+            android:id="@+id/group_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            android:tint="@color/white"
+            android:background="@drawable/icon_color_red"
+            android:layout_marginBottom="9dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_delete_24"
+            app:civ_border_color="@color/navbar"
+            app:civ_border_width="1dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

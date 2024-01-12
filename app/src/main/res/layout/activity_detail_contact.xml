@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutColour"
+    tools:context=".DetailContactActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/navbar"
+        android:padding="7dp">
+        <ImageButton
+            android:id="@+id/BackButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/navbar"
+            android:clickable="true"
+            android:onClick="backToMainActivity"
+            app:srcCompat="@drawable/baseline_arrow_back_24"
+            app:tint="@color/white" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Detail Contact"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:fontFamily="@font/alata"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="140dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/baseline_person_24"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/navbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/rounded_corner">
+
+        <TextView
+            android:id="@+id/cNameDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/alata"
+            android:text="Contact Name"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/LabelText"
+            android:textSize="24sp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:stretchColumns="2"
+            android:layout_marginTop="40dp">
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/alata"
+                    android:text="Last Name"
+                    android:textColor="@color/LabelText"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/LastNameDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/alata"
+                    android:text="282020802"
+                    android:textColor="@color/LabelText"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/alata"
+                    android:text="Phone"
+                    android:textColor="@color/LabelText"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/PhoneDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/alata"
+                    android:text="282020802"
+                    android:textColor="@color/LabelText"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/alata"
+                    android:text="Email"
+                    android:textColor="@color/LabelText"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/emailDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/alata"
+                    android:text="a@gmail.com"
+                    android:textColor="@color/LabelText"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/alata"
+                    android:text="Address"
+                    android:textColor="@color/LabelText"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/addressDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/alata"
+                    android:text="xhjkzhckjhzjkx"
+                    android:textColor="@color/LabelText"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/groupTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/alata"
+                    android:text="Group Name"
+                    android:textColor="@color/LabelText"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/GNDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/alata"
+                    android:text="tes"
+                    android:textColor="@color/LabelText"
+                    android:textSize="20sp" />
+            </TableRow>
+        </TableLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/CallButton"
+            android:layout_width="77dp"
+            android:layout_height="62dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="95dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="213dp"
+            android:layout_marginEnd="238dp"
+            android:foregroundTint="#3F51B5"
+            android:src="@drawable/baseline_local_phone_24"
+            android:tint="@color/white"
+            app:civ_border_color="@color/addContactButton"
+            app:civ_border_width="10dp"
+            app:civ_circle_background_color="@color/addContactButton" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/MessageButton"
+            android:layout_width="74dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="237dp"
+            android:layout_marginTop="213dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/baseline_message_24"
+            android:tint="@color/white"
+            app:civ_border_color="@color/messsageIcon"
+            app:civ_border_width="10dp"
+            app:civ_circle_background_color="@color/messsageIcon" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

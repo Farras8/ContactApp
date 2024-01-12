@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutColour"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/navbar"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Contact"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:fontFamily="@font/alata"
+            android:textSize="25sp" />
+        <ImageButton
+            android:id="@+id/SortButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/navbar"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:onClick="backToMainActivity"
+            app:srcCompat="@drawable/baseline_sort_24"
+            app:tint="@color/white" />
+        <ImageButton
+            android:id="@+id/DeleteAllButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/navbar"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:onClick="backToMainActivity"
+            app:srcCompat="@drawable/baseline_delete_sweep_24"
+            app:tint="@color/white" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounded_corner"
+        android:padding="5dp">
+        <EditText
+            android:id="@+id/seacrhInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="Search Contact"
+            android:textColor="@color/placeholder"
+            android:textAlignment="center"
+            android:fontFamily="@font/alata"
+            android:textSize="15sp" />
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/rounded_corner"
+            android:clickable="true"
+            app:srcCompat="@drawable/baseline_search_24"
+            app:tint="@color/LabelText" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/titleMyGroups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="125dp"
+        android:fontFamily="@font/alata"
+        android:text="My Groups"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/MyGroupBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/rounded_corner"
+        android:drawableStart="@drawable/baseline_group_24"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/alata"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="My Groups"
+        android:textColor="@color/LabelText"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/kontak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/alata"
+        android:text="Contact"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/home_swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="280dp">
+    <ListView
+        android:id="@+id/contactRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        tools:listitem="@layout/row_contact_item" />
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/addContactButton"
+        android:clickable="true"
+        app:backgroundTint="@color/addContactButton"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</RelativeLayout>
